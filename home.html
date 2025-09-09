@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reina Bazar - Your Ultimate Online Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .hero-background {
+    background-image: linear-gradient(rgba(75, 0, 130, 0.7), rgba(75, 0, 130, 0.7)), url('/images\ \(1\).jfif');
+    background-size: cover;
+    background-position: center;
+}
+        .section-title {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+  
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-3xl font-bold text-purple-600">Reina Bazar</h1>
+                <span class="ml-2 text-sm text-gray-600">Descubre todos los Prodcutos</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                <a href="#products" class="text-gray-700 hover:text-purple-600 transition">Products</a>
+                <a href="#about" class="text-gray-700 hover:text-purple-600 transition">About</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+       
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#products" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Products</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    
+    <section id="home" class="hero-background text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Bienvenido a Reina Bazar</h2>
+            <p class="text-lg md:text-xl mb-8">Explora Todos Los productos que tenemos disponibles</p>
+            <a href="#products" class="bg-purple-600 text-white px-8 py-3 rounded-full text-lg hover:bg-purple-700 transition">Descubrir Productos</a>
+        </div>
+    </section>
+
+   
+    <section id="products" class="py-12">
+        <div class="container mx-auto px-4">
+          
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-center section-title mb-8">Moda y accesorios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/3498db/white?text=Elegant+Red+Dress" alt="A stunning red maxi dress with flowing fabric and floral patterns on a mannequin in a sunlit boutique setting, showcasing elegance and modern style" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Stylish Maxi Dress</h3>
+                        <p class="text-gray-600 mb-4">Versatile and comfortable for any occasion.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/2ecc71/white?text=Leather+Handbag" alt="Genuine leather handbag in brown with gold accents, adorned with intricate designs, displayed on a marble counter top with soft studio lighting" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Premium Leather Handbag</h3>
+                        <p class="text-gray-600 mb-4">Timeless elegance meets functionality.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/e74c3c/white?text=Sunglasses" alt="Trendy oversized sunglasses with black frames and tinted lenses on a beach side table overlooking the ocean with scattered seashells" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Trendy Sunglasses</h3>
+                        <p class="text-gray-600 mb-4">UV protection with style.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/9b59b6/white?text=Silk+Scarf" alt="Colorful silk scarf with abstract patterns draped over a vintage chair in a cozy living room with warm ambient light" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Silk Scarf</h3>
+                        <p class="text-gray-600 mb-4">Add a touch of luxury to your wardrobe.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-center section-title mb-8">Electronicos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/f39c12/white?text=Wireless+Earbuds" alt="Compact wireless earbuds in sleek black with charging case on a futuristic desk surrounded by multicolored LED lights in a tech-savvy workspace" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Wireless Earbuds</h3>
+                        <p class="text-gray-600 mb-4">Crystal clear sound and long battery life.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/27ae60/white?text=Smartphone" alt="Modern smartphone with vibrant display showing a nature scene app, placed on a wooden table with cables and accessories in an urban loft" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Latest Smartphone</h3>
+                        <p class="text-gray-600 mb-4">High-performance with stunning camera.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/d35400/white?text=Bluetooth+Speaker" alt="Portable Bluetooth speaker in teal with rugged design resting on grass near a rock fountain in a serene garden setting" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Portable Bluetooth Speaker</h3>
+                        <p class="text-gray-600 mb-4">Powerful sound anywhere you go.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/c0392b/white?text=Laptop" alt="Slim laptop with glowing keyboard in a coffee shop ambiance with steaming mugs and open notebooks on adjacent tables" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Ultra Thin Laptop</h3>
+                        <p class="text-gray-600 mb-4">Lightweight and powerful for productivity.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-center section-title mb-8">Hogar y Jardin</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/8e44ad/white?text=Decorative+Vase" alt="Intricate glass vase with floral motifs standing on a minimalist shelf with potted plants and soft window light filtering through curtains" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Decorative Vase</h3>
+                        <p class="text-gray-600 mb-4">Enhance your home's aesthetic.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/16a085/white?text=Garden+Tools+Set" alt="Wooden handle garden tools set including shovel, rake, and pruners neatly arranged on fertile soil with blooming flowers in the background" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Garden Tools Set</h3>
+                        <p class="text-gray-600 mb-4">Essential for your green thumb endeavors.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/f1c40f/white?text=Cushion+Set" alt="Soft fabric cushion set in neutral tones with decorative patterns placed on a cozy sofa in a warmly lit living room space" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Throw Pillows</h3>
+                        <p class="text-gray-600 mb-4">Add comfort and style to your space.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                    <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/300x300/2980b9/white?text=Plant+Pot" alt="Ceramic plant pot in glossy blue with drainage design holding a vibrant fern on a balcony railing overlooking a cityscape at sunrise" class="w-full h-48 object-cover rounded mb-4" onerror="this.style.display='none';">
+                        <h3 class="text-xl font-semibold mb-2">Ceramic Plant Pot</h3>
+                        <p class="text-gray-600 mb-4">Bring nature indoors beautifully.</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="about" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 section-title">Sobre Reina Bazar</h2>
+            <p class="text-lg text-center max-w-2xl mx-auto">En Reina Bazar, seleccionamos una colección diversa de productos de alta calidad de proveedores confiables de todo el mundo. Nuestra misión es brindar una experiencia de compra excepcional con precios inmejorables y un servicio confiable. ¡Descubre artículos únicos y disfruta de las compras!</p>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 section-title">Contactanos</h2>
+            <div class="max-w-md mx-auto">
+                <form class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-600" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-600" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <textarea id="message" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-600" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-700 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-purple-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Reina Bazar. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple form validation (for demo)
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
